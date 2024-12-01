@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +24,107 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10rem;
+  margin-left: 10rem;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 7680px) {
+  html {
+    font-size: 250%;
+  }
+}
+
+@media (max-width: 5760px) {
+  html {
+    font-size: 185%;
+  }
+}
+
+@media (max-width: 3840px) {
+  html {
+    font-size: 124%;
+  }
+}
+
+@media (max-width: 2880px) {
+  html {
+    font-size: 92.5%;
+  }
+}
+
+@media (max-width: 2560px) {
+  html {
+    font-size: 82.5%;
+  }
+}
+
+@media (max-width: 2400px) {
+  html {
+    font-size: 77%;
+  }
+}
+
+@media (max-width: 2134px) {
+  html {
+    font-size: 68%;
+  }
+}
+
+@media (max-width: 1746px) {
+  html {
+    font-size: 56.5%;
+  }
+}
+
+@media (max-width: 1536px) {
+  html {
+    font-size: 49.5%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 41.5%;
+  }
+}
+
+@media (max-width: 1098px) {
+  html {
+    font-size: 35.5%;
+  }
+}
+
+@media (max-width: 960px) {
+  html {
+    font-size: 31%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 24.8%;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 20.5%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 15%;
+  }
+}
+
+@media (max-width: 384px) {
+  html {
+    font-size: 12%;
+  }
 }

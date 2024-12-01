@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        gray: "#B2B0BC",
+      },
+      backgroundImage: {
+        shadowImageLeft: "url('/assets/images/bg-left.svg')",
+        shadowImageTop: "url('/assets/images/bg-top.svg')",
       },
     },
   },
