@@ -1,6 +1,7 @@
 import React from "react";
 import bg from "../../../assets/images/bg-left.svg";
 import bgTop from "../../../assets/images/bg-top.svg";
+import Image from "next/image";
 
 const HomePage = () => {
   return (
@@ -8,23 +9,23 @@ const HomePage = () => {
       <div
         style={{
           backgroundImage: `url(${bg.src})`,
-          width: "568px",
-          height: "841px",
+          width: "71.8rem",
+          height: "119.1rem",
           backgroundRepeat: "no-repeat",
           position: "absolute",
           top: 0,
-          left: "-80px",
+          left: 0,
         }}
       ></div>
       <div
         style={{
           backgroundImage: `url(${bgTop.src})`,
-          width: "459px",
-          height: "841px",
+          width: "45.9rem",
+          height: "84.1rem",
           backgroundRepeat: "no-repeat",
           position: "absolute",
           top: 0,
-          right: "-72px",
+          right: 0,
         }}
       ></div>
       <div className="text-[12rem] text-center font-[butler] font-medium mt-[5rem]">
@@ -33,15 +34,33 @@ const HomePage = () => {
       <div className="text-[12rem] text-center font-[butler] font-medium">
         <p>
           I{" "}
-          <span className="bg-gradient-to-r from-[#785DD6] to-[#BD93F9] bg-clip-text text-transparent">
+          <span
+            style={{
+              background: "linear-gradient(130deg, #785DD6, #BD93F9)",
+              backgroundClip: "text",
+              color: "transparent",
+            }}
+          >
             Code
           </span>{" "}
           *{" "}
-          <span className="bg-gradient-to-r from-[#785DD6] to-[#BD93F9] bg-clip-text text-transparent">
+          <span
+            style={{
+              background: "linear-gradient(130deg, #785DD6, #BD93F9)",
+              backgroundClip: "text",
+              color: "transparent",
+            }}
+          >
             Create
           </span>{" "}
           *{" "}
-          <span className="bg-gradient-to-r from-[#785DD6] to-[#BD93F9] bg-clip-text text-transparent">
+          <span
+            style={{
+              background: "linear-gradient(130deg, #785DD6, #BD93F9)",
+              backgroundClip: "text",
+              color: "transparent",
+            }}
+          >
             Innovate
           </span>
         </p>
@@ -56,6 +75,25 @@ const HomePage = () => {
           perfect work. I am flexible in my working hours,being able to work
           evenings and weekends.
         </p>
+      </div>
+
+      <div className="w-[100%] flex items-center justify-center">
+        <button
+          className="flex items-center justify-center font-[saira] text-[2rem] gap-[1.8rem]  rounded-[1rem] px-[3rem] py-[1rem] mt-[5rem] "
+          style={{
+            background: "linear-gradient(130deg, #785DD6, #BD93F9)",
+            boxShadow: "0 6px 20px 0 #785DD625, 0 6px 10px 0 #BD93F925",
+          }}
+        >
+          let’s talk
+          <Image
+            src={require("/assets/images/icon/send.svg")}
+            width={0}
+            height={0}
+            alt="sendIcon"
+            className="w-[2.4rem] h-[2.4rem] "
+          />
+        </button>
       </div>
     </div>
   );

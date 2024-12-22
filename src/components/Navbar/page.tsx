@@ -23,7 +23,7 @@ const navOption = [
 
 const Navbar = () => {
   return (
-    <div className="h-[10rem] flex items-center justify-between">
+    <div className="h-[10rem] flex items-center justify-between  w-full px-[10rem] ">
       <div>
         <Image
           src={logo}
