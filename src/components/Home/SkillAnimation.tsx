@@ -19,7 +19,7 @@ const SkillAnimation = () => {
   return (
     <div className="h-[230px] overflow-hidden">
       <div
-        className="mt-[8.8rem] w-full overflow-hidden whitespace-nowrap border-y border-dashed"
+        className="mt-[8.8rem] w-full overflow-hidden whitespace-nowrap border-y border-dashed border-y-[#9682DD]"
         style={{ transform: "rotate(356deg)" }}
       >
         <div className="scroll-animation w-[256rem] h-[12rem] py-[25px]  inline-block items-center gap-[4.6rem]">
