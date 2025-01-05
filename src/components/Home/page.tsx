@@ -82,7 +82,7 @@ const HomePage = () => {
           className="flex items-center justify-center font-[saira] text-[2rem] gap-[1.8rem]  rounded-[1rem] px-[3rem] py-[1rem] mt-[5rem] "
           style={{
             background: "linear-gradient(130deg, #785DD6, #BD93F9)",
-            boxShadow: "0 6px 20px 0 #785DD625, 0 6px 10px 0 #BD93F925",
+            boxShadow: "0 0.6rem 2rem 0 #785DD625, 0 0.6rem 1rem 0 #BD93F925",
           }}
         >
           let’s talk
