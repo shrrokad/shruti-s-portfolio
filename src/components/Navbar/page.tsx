@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import logo from "../../../assets/images/icon.svg";
@@ -23,12 +25,12 @@ const navOption = [
 
 const Navbar = () => {
   return (
-    <div className="h-[10rem] flex items-center justify-between  w-full px-[10rem] ">
+    <div className="h-[10rem] flex items-center justify-between  w-full px-[10rem] z-20">
       <div>
         <Image
           src={logo}
           alt="logo"
-          className="w-[6.5rem] h-[6.5rem]"
+          className="w-[6.5rem] h-[6.5rem] cursor-pointer"
           width={0}
           height={0}
         />

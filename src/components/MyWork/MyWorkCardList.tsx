@@ -1,8 +1,12 @@
-import { space } from "postcss/lib/list";
-import React from "react";
+"use client";
 
+import React from "react";
+import gitHubIcon from "../../../assets/images/icon/gitHub.svg";
+import notFoundImage from "../../../assets/images/Image_not_available.svg";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 const MyWorkCardList = ({ item }: any) => {
-  console.log(item, "item");
+  const router = useRouter();
 
   return (
     <div className="mt-[10rem] flex justify-between gap-[30rem] ">
@@ -39,11 +43,51 @@ const MyWorkCardList = ({ item }: any) => {
       </div>
       <div>
         <div className="w-[90rem] h-[41.5rem] ">
-          <img
-            src={item.thumbnail.src}
+          {item.thumbnail.src ? (
+            <img
+              src={item.thumbnail.src || notFoundImage}
+              alt=""
+              className="w-full h-full rounded-[1rem] "
+            />
+          ) : (
+            <div className="h-full w-full border border-[#9682DD] rounded-[1rem] flex items-center justify-center">
+              <Image
+                src={notFoundImage}
+                alt="not found"
+                width={0}
+                height={0}
+                className="w-[56.9rem] h-[36.6rem] rounded-[1rem] "
+              />
+            </div>
+          )}
+          {/* <img
+            src={item.thumbnail.src || notFoundImage}
             alt=""
             className="w-full h-full rounded-[1rem] "
-          />
+          /> */}
+        </div>
+
+        <div className="flex gap-[1rem] mt-[3rem] ">
+          <button
+            style={{
+              background: "linear-gradient(37deg, #785DD680, #BD93F980)",
+            }}
+            className="w-[20%] text-[1.5rem] font-[saira] rounded-[0.6rem] flex items-center justify-center gap-[1.5rem] "
+          >
+            <img src={gitHubIcon.src} alt="" className="w-[3rem] h-[3rem] " />
+            <p>GitHub</p>
+          </button>
+          <button
+            className="w-[80%] border border-[#BD93F9] rounded-[0.6rem] py-[1rem] text-[1.5rem] font-[saira] "
+            // onClick={() => router.push(item.liveUrl ? item.liveUrl : "")}
+            onClick={() => {
+              if (item.liveUrl) {
+                window.open(item.liveUrl, "_blank");
+              }
+            }}
+          >
+            View Live Site
+          </button>
         </div>
       </div>
     </div>

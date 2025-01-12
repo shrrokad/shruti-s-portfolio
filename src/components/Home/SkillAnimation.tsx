@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import "../../styles/skillanimation.css";
@@ -17,7 +19,7 @@ const SkillAnimation = () => {
               <div className="flex items-center justify-center gap-[2rem]">
                 <p className="font-[saira] text-[3.5rem]">{skill}</p>
                 <Image
-                  src={require("/assets/images/icon/Star.svg")}
+                  src={require("../../../assets/images/icon/Star.svg")}
                   width={0}
                   height={0}
                   alt="sendIcon"
@@ -31,7 +33,7 @@ const SkillAnimation = () => {
               <div className="flex items-center justify-center gap-[2rem]">
                 <p className="font-[saira] text-[3.5rem]">{skill}</p>
                 <Image
-                  src={require("/assets/images/icon/Star.svg")}
+                  src={require("../../../assets/images/icon/Star.svg")}
                   width={0}
                   height={0}
                   alt="sendIcon"
