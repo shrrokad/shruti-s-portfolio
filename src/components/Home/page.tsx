@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import bg from "../../../assets/images/bg-left.svg";
 import bgTop from "../../../assets/images/bg-top.svg";
@@ -15,6 +17,7 @@ const HomePage = () => {
           position: "absolute",
           top: 0,
           left: 0,
+          zIndex: -1,
         }}
       ></div>
       <div
@@ -26,6 +29,7 @@ const HomePage = () => {
           position: "absolute",
           top: 0,
           right: 0,
+          zIndex: -1,
         }}
       ></div>
       <div className="text-[12rem] text-center font-[butler] font-medium mt-[5rem]">
@@ -87,7 +91,7 @@ const HomePage = () => {
         >
           let’s talk
           <Image
-            src={require("/assets/images/icon/send.svg")}
+            src={require("../../../assets/images/icon/send.svg")}
             width={0}
             height={0}
             alt="sendIcon"

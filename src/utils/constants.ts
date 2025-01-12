@@ -36,7 +36,7 @@ export const MyWorksArray = [
       "Luci is a game that helps you achieve financial independence. Users win in-game rewards and unlock game progress by accomplishing personal finance goals. In addition, using patent-pending technology, Luci empowers users through powerful analytics tools that project the past, present, and future.",
     languages: ["React", "Typescript", "CSS", "MUI", "Class Components"],
     gitHUbLink: "",
-    liveUrl: "",
+    liveUrl: "https://spaceluci.com/",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ export const MyWorksArray = [
       "At Laxmipati Events, we don't just create events; we craft unforgettable experiences that linger in the hearts and minds of everyone who attends. We are not your ordinary event management company, we are visionaries, dream weavers, and orchestrators of pure magic. With Established 2016 IN Diamond City Of India.",
     languages: ["VS Code", "React (Vite)", "Typescript", "CSS"],
     gitHUbLink: "",
-    liveUrl: "",
+    liveUrl: "https://laxmipati-event.vercel.app/",
   },
   {
     id: 4,
@@ -64,7 +64,7 @@ export const MyWorksArray = [
       "Jest",
     ],
     gitHUbLink: "",
-    liveUrl: "",
+    liveUrl: "https://sustainext.ai/global-partner-details/valenta-partner-16",
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ export const MyWorksArray = [
       "FinRight is a fintech start-up that makes Banking and Finance simpler for you by providing unbiased guidance and support",
     languages: ["React", "Typescript", "CSS", "Tailwind CSS", "Firebase"],
     gitHUbLink: "",
-    liveUrl: "",
+    liveUrl: "https://finright.vercel.app/",
   },
   {
     id: 6,
