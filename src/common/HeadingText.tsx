@@ -5,7 +5,7 @@ interface HeadingTextProps {
 }
 const HeadingText = ({ label }: HeadingTextProps) => {
   return (
-    <div className="relative w-[35.6rem]">
+    <div className="relative min-w-[35.6rem] max-w-[41.6rem] ">
       <p className="text-[8rem] font-[cairo] font-extrabold text-[#9682DD]">
         {label}{" "}
       </p>

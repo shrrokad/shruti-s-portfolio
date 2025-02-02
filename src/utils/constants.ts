@@ -87,3 +87,22 @@ export const MyWorksArray = [
     liveUrl: "",
   },
 ];
+
+export const educationData = [
+  {
+    title: "S.S.C Passout",
+    year: "2020-2021",
+    description: "I Passout my S.S.C in Risen Morden School.",
+  },
+  {
+    title: "Web Design & Development",
+    year: "2021-2022",
+    description: "I Complete my Course in AD Tech IT & Design Institute.",
+  },
+  {
+    title: "Diploma (Computer Engineering)",
+    year: "2022 - Currently studying (TY Completed)",
+    description:
+      "I am studying Diploma in Swarnim Startup and Innovation University (Gandhinagar).",
+  },
+];
