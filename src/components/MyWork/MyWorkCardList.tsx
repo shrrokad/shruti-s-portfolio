@@ -60,11 +60,6 @@ const MyWorkCardList = ({ item }: any) => {
               />
             </div>
           )}
-          {/* <img
-            src={item.thumbnail.src || notFoundImage}
-            alt=""
-            className="w-full h-full rounded-[1rem] "
-          /> */}
         </div>
 
         <div className="flex gap-[1rem] mt-[3rem] ">
