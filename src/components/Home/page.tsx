@@ -4,6 +4,7 @@ import React from "react";
 import bg from "../../../assets/images/bg-left.svg";
 import bgTop from "../../../assets/images/bg-top.svg";
 import Image from "next/image";
+import Button from "@/common/Button";
 
 const HomePage = () => {
   return (
@@ -82,22 +83,7 @@ const HomePage = () => {
       </div>
 
       <div className="w-[100%] flex items-center justify-center">
-        <button
-          className="flex items-center justify-center font-[saira] text-[2rem] gap-[1.8rem]  rounded-[1rem] px-[3rem] py-[1rem] mt-[5rem] "
-          style={{
-            background: "linear-gradient(130deg, #785DD6, #BD93F9)",
-            boxShadow: "0 0.6rem 2rem 0 #785DD625, 0 0.6rem 1rem 0 #BD93F925",
-          }}
-        >
-          let’s talk
-          <Image
-            src={require("../../../assets/images/icon/send.svg")}
-            width={0}
-            height={0}
-            alt="sendIcon"
-            className="w-[2.4rem] h-[2.4rem] "
-          />
-        </button>
+        <Button label="let’s talk" />
       </div>
     </div>
   );
